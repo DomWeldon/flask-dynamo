@@ -117,3 +117,4 @@ def test_can_share_contexts(app, dynamo):
     with app.app_context():
         d = Dynamo()
         assert d.tables is not None
+        assert d.connection is not None
