@@ -97,3 +97,6 @@ ENV/
 
 # mypy
 .mypy_cache/
+
+# secret values
+.dev_secrets.yaml
