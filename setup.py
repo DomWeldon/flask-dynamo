@@ -15,7 +15,10 @@ from subprocess import call
 
 from setuptools import Command, setup
 
-from flask_dynamo import __version__
+
+__version__ = '0.1.2'
+__author__ = 'Randall Degges'
+__email__ = 'r@rdegges.com'
 
 
 VERSION = __version__
@@ -51,7 +54,7 @@ setup(
     include_package_data = True,
 
     # Package dependencies:
-    install_requires = ['boto3>=1.1.4', 'Flask>=0.10.1'],
+    install_requires = ['boto3', 'Flask'],
 
     # Metadata for PyPI:
     author = 'Randall Degges',
