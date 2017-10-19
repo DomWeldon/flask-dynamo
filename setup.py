@@ -45,29 +45,29 @@ class RunTests(Command):
 setup(
 
     # Basic package information:
-    name = 'flask-dynamo',
-    version = VERSION,
-    packages = ['flask_dynamo'],
+    name='flask-dynamo',
+    version=VERSION,
+    packages=['flask_dynamo'],
 
     # Packaging options:
-    zip_safe = False,
-    include_package_data = True,
+    zip_safe=False,
+    include_package_data=True,
 
     # Package dependencies:
-    install_requires = ['boto3', 'Flask'],
+    install_requires=['boto3>=1.1.4', 'Flask>=0.10.1']
 
     # Metadata for PyPI:
-    author = 'Randall Degges',
-    author_email = 'r@rdegges.com',
-    license = 'UNLICENSE',
-    url = 'https://github.com/rdegges/flask-dynamo',
-    keywords = 'python dynamodb dynamo aws amazon flask web database',
-    description = 'DynamoDB integration for Flask.',
-    long_description = __doc__,
+    author='Randall Degges',
+    author_email='r@rdegges.com',
+    license='UNLICENSE',
+    url='https://github.com/rdegges/flask-dynamo',
+    keywords='python dynamodb dynamo aws amazon flask web database',
+    description='DynamoDB integration for Flask.',
+    long_description=__doc__,
 
     # Classifiers:
-    platforms = 'any',
-    classifiers = [
+    platforms='any',
+    classifiers=[
         'Environment :: Web Environment',
         'Intended Audience :: Developers',
         'License :: Public Domain',
@@ -87,6 +87,6 @@ setup(
     ],
 
     # Test helper:
-    cmdclass = {'test': RunTests},
+    cmdclass={'test': RunTests},
 
 )
